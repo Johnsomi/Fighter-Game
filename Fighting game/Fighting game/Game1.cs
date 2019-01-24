@@ -9,6 +9,7 @@ namespace Fighting_game
     /// </summary>
     public class Game1 : Game
     {
+        //
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
