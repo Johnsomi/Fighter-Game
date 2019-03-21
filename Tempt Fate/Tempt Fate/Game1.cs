@@ -49,7 +49,7 @@ namespace Tempt_Fate
 			MediaPlayer.Volume -= .75f;
 			loadVolume();
 			MediaPlayer.MediaStateChanged += MediaPlayer_MediaStateChanged;
-			addLines();
+			AddLines();
 		}
 		//plays the song
 		private void MediaPlayer_MediaStateChanged(object sender, System.EventArgs e)
@@ -346,9 +346,9 @@ namespace Tempt_Fate
 			}
 		}
 		//creates line
-		public void addLines()
+		public void AddLines()
 		{
-			Lines.Add(new Line(Content.Load<Texture2D>("TestMystic"), new Vector2(0, 600), 1200, 8));
+			Lines.Add(new Line(Content.Load<Texture2D>("basePunchMystic"), new Vector2(0, 600), 1200, 8));
 		}
 	}
 }
